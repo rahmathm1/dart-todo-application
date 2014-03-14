@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="todo.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">My ToDo Llist</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">ToDo List</a></li>
+
+      </ul>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="well">
+      <h1>My ToDo Llist</h1>  
+    </div>
+    <div class="row">
+    <div class="col-md-8">
+        <ul id="todo-list">
+          
+        </ul>
+      </div>
+      <div class="col-md-4">
+      
+      <div class="panel panel-default">
+  <div class="panel-heading">
+  Add New Todo
+</div>
+  <div class="panel-body " style="padding:10px 30px">
+    <div class="row">
+        <input type="text"  class="form-control" placeholder="Whaty ou have to do next?" id="todo-text" style="marign-top:10px" />
+        </div>
+        <div class="row">
+          <input type="button" value="Add" id="btn-add" class="btn btn-primary form-control"  style="marign-top:10px" />
+
+        </div>
+  </div>
+  </div>
+  <div class="panel panel-default">
+  <div class="panel-heading">
+  Clear the list
+</div>
+  <div class="panel-body " style="padding:10px 30px">
+
+
+
+        <div class="row">
+
+          <input type="button" value="Clear" id="btn-clear" class="btn btn-danger form-control"  style="marign-top:10px" />
+        </div>
+  </div>
+</div>
+      
+      </div>
+    </div>
+  </div>
+    
+   
+    <script type="application/dart" src="todo.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
